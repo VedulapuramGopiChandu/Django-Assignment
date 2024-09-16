@@ -7,3 +7,7 @@ from django.contrib.auth.models import User
 @receiver(post_save, sender=User)
 def my_signal_receiver(sender, instance, **kwargs):
     print(f"Signal handler running in thread: {threading.current_thread().name}")
+
+
+
+
